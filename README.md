@@ -12,4 +12,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Example this project
 
-An example of the results of this project can be [visit here](https://fhrzdty31.github.io/)
+An example of the results of this project can be [visit here](https://fhrzdty31.github.io/Angular-Dasar/)
