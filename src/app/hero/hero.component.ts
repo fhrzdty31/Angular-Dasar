@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit, OnDestroy {
 
   title = 'Hero'
 
@@ -19,6 +19,21 @@ export class HeroComponent {
     name: this.title,
     age: 17,
     address: this.city[2]
+  }
+
+  constructor() {
+    console.log('This is constructor');
+    
+  }
+
+  ngOnInit(): void {
+      console.log('This is ngOnInit');
+      
+  }
+
+  ngOnDestroy(): void {
+      console.log('This is ngOnDestroy');
+      
   }
 
 }

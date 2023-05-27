@@ -1,5 +1,9 @@
 <h1>Pahlawan</h1>
 
+
+<button (click)="toggleChild()">Toggle Child</button>
+<br><br>
+
 <hr>
 
-<app-hero></app-hero>
+<app-hero *ngIf="isChild"></app-hero>
