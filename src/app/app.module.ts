@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { HeroComponent } from './hero/hero.component';
     HeroComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
